@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-tzpy
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/build-e2e-miin-tenant/test-app-imhd/devfile-sample-python-basic-tzpy@sha256:49dde4db4350f616a5ac812f43312edfb86d366214bb75ffa0609cd73d429891
+        name: my-python
+        resources: {}
+status: {}
